@@ -1,0 +1,98 @@
+<div class="contenido">
+    <mat-card style="margin: 20px 40px 0px 40px; background-color: black; color: white;">
+        <div class="text-center mt-3">
+            <h1>Historial Venta</h1>
+        </div>
+    </mat-card>
+    <mat-card style="margin: 20px 40px 40px 40px;">
+        <mat-card-content>
+            <form [formGroup]="formBusqueda" (ngSubmit)="buscarVentas()">
+                <div class="campos-formulario">
+                    <mat-form-field appearance="fill">
+                        <mat-label>Buscar por</mat-label>
+                        <mat-select formControlName="buscarPor">
+                            <mat-option *ngFor="let item of opcionesBusqueda" [value]="item.value">{{item.descripcion}}</mat-option>
+                        </mat-select>
+                    </mat-form-field>
+    
+                    <mat-form-field appearance="fill" *ngIf="formBusqueda.value.buscarPor == 'numero'">
+                        <mat-label>Numero de Orden</mat-label>
+                        <input matInput autocomplete="off" formControlName="numero">
+                    </mat-form-field>
+    
+                    <mat-form-field appearance="fill" *ngIf="formBusqueda.value.buscarPor == 'fecha'">
+                        <mat-label>Fecha Inicio</mat-label>
+                        <input matInput autocomplete="off" formControlName="fechaInicio" [matDatepicker]="picker1">
+                        <mat-datepicker-toggle matSuffix [for]="picker1"></mat-datepicker-toggle>
+                        <mat-datepicker #picker1></mat-datepicker>
+                    </mat-form-field>
+    
+                    <mat-form-field appearance="fill" *ngIf="formBusqueda.value.buscarPor == 'fecha'">
+                        <mat-label>Fecha Fin</mat-label>
+                        <input matInput autocomplete="off" formControlName="fechaFin" [matDatepicker]="picker2">
+                        <mat-datepicker-toggle matSuffix [for]="picker2"></mat-datepicker-toggle>
+                        <mat-datepicker #picker2></mat-datepicker>
+                    </mat-form-field>
+    
+                    <button mat-raised-button color="primary" 
+                    [disabled]="formBusqueda.invalid" 
+                    type="submit"
+                    class="boton-buscar">
+                        <mat-icon>search</mat-icon>Buscar
+                    </button>
+                </div>
+            </form>
+            <mat-divider></mat-divider>
+            <mat-form-field class="input-filter">
+                <mat-label>Buscar</mat-label>
+                <input matInput (keyup)="aplicarFiltroTabla($event)" #input>
+            </mat-form-field>
+    
+            <div class="mat-elevation-z2">
+                <table mat-table [dataSource]="datosListaVenta">
+                    <ng-container matColumnDef="FechaRegistro">
+                        <th mat-header-cell *matHeaderCellDef>FechaRegistro</th>
+                        <td mat-cell *matCellDef="let element">{{element.fechaRegistro}}</td>
+                    </ng-container>
+                  
+                    <ng-container matColumnDef="NumeroDocumento">
+                        <th mat-header-cell *matHeaderCellDef>NumeroDocumento</th>
+                        <td mat-cell *matCellDef="let element">{{element.numeroDocumento}}</td>
+                    </ng-container>
+                  
+                    <ng-container matColumnDef="TipoPago">
+                        <th mat-header-cell *matHeaderCellDef>TipoPago</th>
+                        <td mat-cell *matCellDef="let element">{{element.tipoPago}}</td>
+                    </ng-container>
+                  
+                    <ng-container matColumnDef="Total">
+                        <th mat-header-cell *matHeaderCellDef>Total</th>
+                        <td mat-cell *matCellDef="let element">{{element.totalTxt}}</td>
+                    </ng-container>
+                
+                    <ng-container matColumnDef="Accion">
+                        <th mat-header-cell *matHeaderCellDef style="width: 130px;">Accion</th>
+                        <td mat-cell *matCellDef="let element">
+                          <div>
+                            <button mat-icon-button color="primary" (click)="verDetalleVenta(element)"
+                            matTooltip="Ver Detalle">
+                              <mat-icon>visibility</mat-icon>
+                            </button>
+                          </div>
+                        </td>
+                    </ng-container>
+                    <tr mat-header-row *matHeaderRowDef="columnasTabla"></tr>
+                    <tr mat-row *matRowDef="let row; columns: columnasTabla;"></tr>
+                    <tr class="mat-row" *matNoDataRow>
+                        <td class="mat-cell" colspan="4">No hay datos que coincidan con el filtro "{{input.value}}"</td>
+                    </tr>
+                    </table>
+                  
+                    <mat-paginator [pageSizeOptions]="[5, 10, 20]"
+                                   showFirstLastButtons
+                                   aria-label="Select page of periodic elements">
+                    </mat-paginator>
+            </div>
+        </mat-card-content>
+    </mat-card>
+</div>

@@ -1,0 +1,55 @@
+<div class="contenido">
+    <mat-card style="margin: 20px 40px 0px 40px; background-color: black; color: white;">
+        <div class="text-center mt-3">
+            <h1>DashBoard - Ventas Semanales</h1>
+        </div>
+    </mat-card>
+<mat-card style="margin: 20px 40px 40px 40px;">
+    <mat-card-content>
+        <mat-grid-list cols="3" rowHeight="100px">
+            <mat-grid-tile>
+                <mat-card class="card-info">
+                    <mat-card-header>
+                        <div mat-card-avatar>
+                            <mat-icon color="black">payments</mat-icon>
+                        </div>
+                        <mat-card-title>Total Ingresos</mat-card-title>
+                        <mat-card-subtitle>$ {{totalIngresos}}</mat-card-subtitle>
+                    </mat-card-header>
+                </mat-card>
+            </mat-grid-tile>
+
+            <mat-grid-tile>
+                <mat-card class="card-info">
+                    <mat-card-header>
+                        <div mat-card-avatar>
+                            <mat-icon color="black">sell</mat-icon>
+                        </div>
+                        <mat-card-title>Total Ventas</mat-card-title>
+                        <mat-card-subtitle>{{totalVentas}}</mat-card-subtitle>
+                    </mat-card-header>
+                </mat-card>
+            </mat-grid-tile>
+
+            <mat-grid-tile>
+                <mat-card class="card-info">
+                    <mat-card-header>
+                        <div mat-card-avatar>
+                            <mat-icon color="black">collections_bookmark</mat-icon>
+                        </div>
+                        <mat-card-title>Total de Productos</mat-card-title>
+                        <mat-card-subtitle>{{totalProductos}}</mat-card-subtitle>
+                    </mat-card-header>
+                </mat-card>
+            </mat-grid-tile>
+        </mat-grid-list>
+        <mat-card style="margin-top: 15px;">
+            <mat-card-content>
+                <div style="width: 100%; height: 400px;">
+                    <canvas id="chartBarras"></canvas>
+                </div>
+            </mat-card-content>
+        </mat-card>
+    </mat-card-content>
+</mat-card>
+</div>

@@ -1,0 +1,28 @@
+<div style="background-color: lightblue; height: 100%;">
+    <div class="content">
+        <div class="loginImg shadow-lg">
+            <img src="../assets/img/bodega.jpg" width="auto" height="630px">
+        </div>
+        <div class="login shadow-lg">
+            <form [formGroup]="formLogin" (ngSubmit)="iniciarSesion()">
+                <h1 class="h3 mb-3 fw-normal">Iniciar Sesión</h1>
+                <img class="mb-4" src="../assets/img/inventario.png" alt="" width="200" height="auto">
+                <mat-form-field class="full-width" appearance="outline">
+                    <mat-label>Email</mat-label>
+                    <input formControlName="email" matInput autocomplete="off">
+                    <mat-icon matSuffix>mail</mat-icon>
+                </mat-form-field>
+    
+                <mat-form-field class="full-width" appearance="outline">
+                    <mat-label>Contraseña</mat-label>
+                    <input [type]="ocultarPassword ? 'password' : 'text'" formControlName="password" matInput autocomplete="off">
+                </mat-form-field>
+                <button class="full-width" mat-raised-button color="primary" type="submit" [disabled]="formLogin.invalid">
+                    Ingresar
+                    <mat-icon matSuffix>login</mat-icon>
+                    <mat-progress-bar mode="indeterminate" *ngIf="mostrarLoading"></mat-progress-bar>
+                </button>
+            </form>
+        </div>
+    </div>
+</div>

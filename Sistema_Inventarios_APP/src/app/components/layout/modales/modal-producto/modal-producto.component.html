@@ -1,0 +1,69 @@
+<div class="contenido">
+    <h1 mat-dialog-title>{{tituloAccion}} Producto</h1>
+    <div mat-dialog-content>
+        <form class="example-form" [formGroup]="formProducto">
+            <mat-form-field appearance="outline">
+                <mat-label>Nombre</mat-label>
+                <input matInput autocomplete="off" formControlName="nombre">
+                <mat-icon matSuffix>fit_screen</mat-icon>
+            </mat-form-field>
+
+            <mat-form-field appearance="outline">
+                <mat-label>Categoria</mat-label>
+                <mat-select formControlName="idCategoria">
+                    <mat-option *ngFor="let item of listaCategorias" [value]="item.idCategoria">
+                        {{item.nombre}}
+                    </mat-option>
+                </mat-select>
+            </mat-form-field>
+
+            <mat-form-field appearance="outline">
+                <mat-label>Marca</mat-label>
+                <input matInput autocomplete="off" formControlName="marca">
+                <mat-icon matSuffix>branding_watermark</mat-icon>
+            </mat-form-field>
+
+            <div class="example-container">
+                <mat-form-field appearance="outline" style="width: 39%;">
+                    <mat-label>StockMinimo</mat-label>
+                    <input type="number" matInput autocomplete="off" formControlName="stockMinimo">
+                    <mat-icon matSuffix>edit</mat-icon>
+                </mat-form-field>
+    
+                <mat-form-field appearance="outline" style="width: 39%;">
+                    <mat-label>Peso</mat-label>
+                    <input matInput autocomplete="off" formControlName="peso">
+                    <mat-icon matSuffix>weight</mat-icon>
+                </mat-form-field>
+            </div>
+            
+            <div class="example-container">
+                <mat-form-field appearance="outline" style="width: 39%;">
+                    <mat-label>Precio Costo</mat-label>
+                    <input matInput autocomplete="off" formControlName="precioCostoTxt">
+                    <mat-icon matSuffix>attach_money</mat-icon>
+                </mat-form-field>
+    
+                <mat-form-field appearance="outline" style="width: 39%;">
+                    <mat-label>Precio Venta</mat-label>
+                    <input matInput autocomplete="off" formControlName="precioVentaTxt">
+                    <mat-icon matSuffix>attach_money</mat-icon>
+                </mat-form-field>
+            </div>
+
+            <mat-form-field appearance="outline">
+                <mat-label>Estado</mat-label>
+                <mat-select formControlName="esActivo">
+                    <mat-option value="1">Activo</mat-option>
+                    <mat-option value="0">Desactivado</mat-option>
+                </mat-select>
+            </mat-form-field>
+        </form>
+        <div mat-dialog-actions class="center">
+            <button mat-raised-button mat-dialog-close color="warn">Volver</button>
+            <button mat-raised-button color="primary" 
+                [disabled]="formProducto.invalid"
+                (click)="guardarEditarProducto()">{{botonAccion}}</button>
+        </div>
+    </div>
+</div>

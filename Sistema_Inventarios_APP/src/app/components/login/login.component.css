@@ -1,0 +1,26 @@
+.full-width {
+    width: 80%;
+}
+
+.content {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+  .loginImg {
+    width: auto;
+    height: 630px;
+    border-radius: 2%;
+    margin-top: 5%;
+}
+
+.login {
+    background-color: white;
+    padding: 20px;
+    text-align: center;
+    width: 380px;
+    height: 630px;
+    margin-top: 5%;
+}

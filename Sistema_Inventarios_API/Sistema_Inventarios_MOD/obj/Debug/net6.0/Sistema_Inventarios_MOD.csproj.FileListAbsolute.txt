@@ -1,0 +1,56 @@
+C:\Users\JuanJoo\OneDrive - Universidad de Guayaquil\Developer\ANGULAR\CS_Sistema_Inventarios\Sistema_Inventarios_API\Sistema_Inventarios_MOD\bin\Debug\net6.0\Sistema_Inventarios_MOD.deps.json
+C:\Users\JuanJoo\OneDrive - Universidad de Guayaquil\Developer\ANGULAR\CS_Sistema_Inventarios\Sistema_Inventarios_API\Sistema_Inventarios_MOD\bin\Debug\net6.0\Sistema_Inventarios_MOD.runtimeconfig.json
+C:\Users\JuanJoo\OneDrive - Universidad de Guayaquil\Developer\ANGULAR\CS_Sistema_Inventarios\Sistema_Inventarios_API\Sistema_Inventarios_MOD\bin\Debug\net6.0\Sistema_Inventarios_MOD.dll
+C:\Users\JuanJoo\OneDrive - Universidad de Guayaquil\Developer\ANGULAR\CS_Sistema_Inventarios\Sistema_Inventarios_API\Sistema_Inventarios_MOD\bin\Debug\net6.0\Sistema_Inventarios_MOD.pdb
+C:\Users\JuanJoo\OneDrive - Universidad de Guayaquil\Developer\ANGULAR\CS_Sistema_Inventarios\Sistema_Inventarios_API\Sistema_Inventarios_MOD\obj\Debug\net6.0\Sistema_Inventarios_MOD.csproj.AssemblyReference.cache
+C:\Users\JuanJoo\OneDrive - Universidad de Guayaquil\Developer\ANGULAR\CS_Sistema_Inventarios\Sistema_Inventarios_API\Sistema_Inventarios_MOD\obj\Debug\net6.0\Sistema_Inventarios_MOD.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\JuanJoo\OneDrive - Universidad de Guayaquil\Developer\ANGULAR\CS_Sistema_Inventarios\Sistema_Inventarios_API\Sistema_Inventarios_MOD\obj\Debug\net6.0\Sistema_Inventarios_MOD.AssemblyInfoInputs.cache
+C:\Users\JuanJoo\OneDrive - Universidad de Guayaquil\Developer\ANGULAR\CS_Sistema_Inventarios\Sistema_Inventarios_API\Sistema_Inventarios_MOD\obj\Debug\net6.0\Sistema_Inventarios_MOD.AssemblyInfo.cs
+C:\Users\JuanJoo\OneDrive - Universidad de Guayaquil\Developer\ANGULAR\CS_Sistema_Inventarios\Sistema_Inventarios_API\Sistema_Inventarios_MOD\obj\Debug\net6.0\Sistema_Inventarios_MOD.csproj.CoreCompileInputs.cache
+C:\Users\JuanJoo\OneDrive - Universidad de Guayaquil\Developer\ANGULAR\CS_Sistema_Inventarios\Sistema_Inventarios_API\Sistema_Inventarios_MOD\obj\Debug\net6.0\Sistema_Inventarios_MOD.dll
+C:\Users\JuanJoo\OneDrive - Universidad de Guayaquil\Developer\ANGULAR\CS_Sistema_Inventarios\Sistema_Inventarios_API\Sistema_Inventarios_MOD\obj\Debug\net6.0\refint\Sistema_Inventarios_MOD.dll
+C:\Users\JuanJoo\OneDrive - Universidad de Guayaquil\Developer\ANGULAR\CS_Sistema_Inventarios\Sistema_Inventarios_API\Sistema_Inventarios_MOD\obj\Debug\net6.0\Sistema_Inventarios_MOD.pdb
+C:\Users\JuanJoo\OneDrive - Universidad de Guayaquil\Developer\ANGULAR\CS_Sistema_Inventarios\Sistema_Inventarios_API\Sistema_Inventarios_MOD\obj\Debug\net6.0\Sistema_Inventarios_MOD.genruntimeconfig.cache
+C:\Users\JuanJoo\OneDrive - Universidad de Guayaquil\Developer\ANGULAR\CS_Sistema_Inventarios\Sistema_Inventarios_API\Sistema_Inventarios_MOD\obj\Debug\net6.0\ref\Sistema_Inventarios_MOD.dll
+E:\DEVELOPER\ANGULAR\CS_Sistema_Inventarios\Sistema_Inventarios\Sistema_Inventarios_API\Sistema_Inventarios_MOD\bin\Debug\net6.0\Sistema_Inventarios_MOD.deps.json
+E:\DEVELOPER\ANGULAR\CS_Sistema_Inventarios\Sistema_Inventarios\Sistema_Inventarios_API\Sistema_Inventarios_MOD\bin\Debug\net6.0\Sistema_Inventarios_MOD.runtimeconfig.json
+E:\DEVELOPER\ANGULAR\CS_Sistema_Inventarios\Sistema_Inventarios\Sistema_Inventarios_API\Sistema_Inventarios_MOD\bin\Debug\net6.0\Sistema_Inventarios_MOD.dll
+E:\DEVELOPER\ANGULAR\CS_Sistema_Inventarios\Sistema_Inventarios\Sistema_Inventarios_API\Sistema_Inventarios_MOD\bin\Debug\net6.0\Sistema_Inventarios_MOD.pdb
+E:\DEVELOPER\ANGULAR\CS_Sistema_Inventarios\Sistema_Inventarios\Sistema_Inventarios_API\Sistema_Inventarios_MOD\obj\Debug\net6.0\Sistema_Inventarios_MOD.csproj.AssemblyReference.cache
+E:\DEVELOPER\ANGULAR\CS_Sistema_Inventarios\Sistema_Inventarios\Sistema_Inventarios_API\Sistema_Inventarios_MOD\obj\Debug\net6.0\Sistema_Inventarios_MOD.GeneratedMSBuildEditorConfig.editorconfig
+E:\DEVELOPER\ANGULAR\CS_Sistema_Inventarios\Sistema_Inventarios\Sistema_Inventarios_API\Sistema_Inventarios_MOD\obj\Debug\net6.0\Sistema_Inventarios_MOD.AssemblyInfoInputs.cache
+E:\DEVELOPER\ANGULAR\CS_Sistema_Inventarios\Sistema_Inventarios\Sistema_Inventarios_API\Sistema_Inventarios_MOD\obj\Debug\net6.0\Sistema_Inventarios_MOD.AssemblyInfo.cs
+E:\DEVELOPER\ANGULAR\CS_Sistema_Inventarios\Sistema_Inventarios\Sistema_Inventarios_API\Sistema_Inventarios_MOD\obj\Debug\net6.0\Sistema_Inventarios_MOD.csproj.CoreCompileInputs.cache
+E:\DEVELOPER\ANGULAR\CS_Sistema_Inventarios\Sistema_Inventarios\Sistema_Inventarios_API\Sistema_Inventarios_MOD\obj\Debug\net6.0\Sistema_Inventarios_MOD.dll
+E:\DEVELOPER\ANGULAR\CS_Sistema_Inventarios\Sistema_Inventarios\Sistema_Inventarios_API\Sistema_Inventarios_MOD\obj\Debug\net6.0\refint\Sistema_Inventarios_MOD.dll
+E:\DEVELOPER\ANGULAR\CS_Sistema_Inventarios\Sistema_Inventarios\Sistema_Inventarios_API\Sistema_Inventarios_MOD\obj\Debug\net6.0\Sistema_Inventarios_MOD.pdb
+E:\DEVELOPER\ANGULAR\CS_Sistema_Inventarios\Sistema_Inventarios\Sistema_Inventarios_API\Sistema_Inventarios_MOD\obj\Debug\net6.0\Sistema_Inventarios_MOD.genruntimeconfig.cache
+E:\DEVELOPER\ANGULAR\CS_Sistema_Inventarios\Sistema_Inventarios\Sistema_Inventarios_API\Sistema_Inventarios_MOD\obj\Debug\net6.0\ref\Sistema_Inventarios_MOD.dll
+E:\DESARROLLO\ANGULAR\CS_Sistema_Inventarios\Sistema_Inventarios\Sistema_Inventarios_API\Sistema_Inventarios_MOD\bin\Debug\net6.0\Sistema_Inventarios_MOD.deps.json
+E:\DESARROLLO\ANGULAR\CS_Sistema_Inventarios\Sistema_Inventarios\Sistema_Inventarios_API\Sistema_Inventarios_MOD\bin\Debug\net6.0\Sistema_Inventarios_MOD.runtimeconfig.json
+E:\DESARROLLO\ANGULAR\CS_Sistema_Inventarios\Sistema_Inventarios\Sistema_Inventarios_API\Sistema_Inventarios_MOD\bin\Debug\net6.0\Sistema_Inventarios_MOD.dll
+E:\DESARROLLO\ANGULAR\CS_Sistema_Inventarios\Sistema_Inventarios\Sistema_Inventarios_API\Sistema_Inventarios_MOD\bin\Debug\net6.0\Sistema_Inventarios_MOD.pdb
+E:\DESARROLLO\ANGULAR\CS_Sistema_Inventarios\Sistema_Inventarios\Sistema_Inventarios_API\Sistema_Inventarios_MOD\obj\Debug\net6.0\Sistema_Inventarios_MOD.csproj.AssemblyReference.cache
+E:\DESARROLLO\ANGULAR\CS_Sistema_Inventarios\Sistema_Inventarios\Sistema_Inventarios_API\Sistema_Inventarios_MOD\obj\Debug\net6.0\Sistema_Inventarios_MOD.GeneratedMSBuildEditorConfig.editorconfig
+E:\DESARROLLO\ANGULAR\CS_Sistema_Inventarios\Sistema_Inventarios\Sistema_Inventarios_API\Sistema_Inventarios_MOD\obj\Debug\net6.0\Sistema_Inventarios_MOD.AssemblyInfoInputs.cache
+E:\DESARROLLO\ANGULAR\CS_Sistema_Inventarios\Sistema_Inventarios\Sistema_Inventarios_API\Sistema_Inventarios_MOD\obj\Debug\net6.0\Sistema_Inventarios_MOD.AssemblyInfo.cs
+E:\DESARROLLO\ANGULAR\CS_Sistema_Inventarios\Sistema_Inventarios\Sistema_Inventarios_API\Sistema_Inventarios_MOD\obj\Debug\net6.0\Sistema_Inventarios_MOD.csproj.CoreCompileInputs.cache
+E:\DESARROLLO\ANGULAR\CS_Sistema_Inventarios\Sistema_Inventarios\Sistema_Inventarios_API\Sistema_Inventarios_MOD\obj\Debug\net6.0\Sistema_Inventarios_MOD.dll
+E:\DESARROLLO\ANGULAR\CS_Sistema_Inventarios\Sistema_Inventarios\Sistema_Inventarios_API\Sistema_Inventarios_MOD\obj\Debug\net6.0\refint\Sistema_Inventarios_MOD.dll
+E:\DESARROLLO\ANGULAR\CS_Sistema_Inventarios\Sistema_Inventarios\Sistema_Inventarios_API\Sistema_Inventarios_MOD\obj\Debug\net6.0\Sistema_Inventarios_MOD.pdb
+E:\DESARROLLO\ANGULAR\CS_Sistema_Inventarios\Sistema_Inventarios\Sistema_Inventarios_API\Sistema_Inventarios_MOD\obj\Debug\net6.0\Sistema_Inventarios_MOD.genruntimeconfig.cache
+E:\DESARROLLO\ANGULAR\CS_Sistema_Inventarios\Sistema_Inventarios\Sistema_Inventarios_API\Sistema_Inventarios_MOD\obj\Debug\net6.0\ref\Sistema_Inventarios_MOD.dll
+E:\DESARROLLO\ANGULAR\CS_Sistema_Inventarios - copia\Sistema_Inventarios\Sistema_Inventarios_API\Sistema_Inventarios_MOD\bin\Debug\net6.0\Sistema_Inventarios_MOD.deps.json
+E:\DESARROLLO\ANGULAR\CS_Sistema_Inventarios - copia\Sistema_Inventarios\Sistema_Inventarios_API\Sistema_Inventarios_MOD\bin\Debug\net6.0\Sistema_Inventarios_MOD.runtimeconfig.json
+E:\DESARROLLO\ANGULAR\CS_Sistema_Inventarios - copia\Sistema_Inventarios\Sistema_Inventarios_API\Sistema_Inventarios_MOD\bin\Debug\net6.0\Sistema_Inventarios_MOD.dll
+E:\DESARROLLO\ANGULAR\CS_Sistema_Inventarios - copia\Sistema_Inventarios\Sistema_Inventarios_API\Sistema_Inventarios_MOD\bin\Debug\net6.0\Sistema_Inventarios_MOD.pdb
+E:\DESARROLLO\ANGULAR\CS_Sistema_Inventarios - copia\Sistema_Inventarios\Sistema_Inventarios_API\Sistema_Inventarios_MOD\obj\Debug\net6.0\Sistema_Inventarios_MOD.csproj.AssemblyReference.cache
+E:\DESARROLLO\ANGULAR\CS_Sistema_Inventarios - copia\Sistema_Inventarios\Sistema_Inventarios_API\Sistema_Inventarios_MOD\obj\Debug\net6.0\Sistema_Inventarios_MOD.GeneratedMSBuildEditorConfig.editorconfig
+E:\DESARROLLO\ANGULAR\CS_Sistema_Inventarios - copia\Sistema_Inventarios\Sistema_Inventarios_API\Sistema_Inventarios_MOD\obj\Debug\net6.0\Sistema_Inventarios_MOD.AssemblyInfoInputs.cache
+E:\DESARROLLO\ANGULAR\CS_Sistema_Inventarios - copia\Sistema_Inventarios\Sistema_Inventarios_API\Sistema_Inventarios_MOD\obj\Debug\net6.0\Sistema_Inventarios_MOD.AssemblyInfo.cs
+E:\DESARROLLO\ANGULAR\CS_Sistema_Inventarios - copia\Sistema_Inventarios\Sistema_Inventarios_API\Sistema_Inventarios_MOD\obj\Debug\net6.0\Sistema_Inventarios_MOD.csproj.CoreCompileInputs.cache
+E:\DESARROLLO\ANGULAR\CS_Sistema_Inventarios - copia\Sistema_Inventarios\Sistema_Inventarios_API\Sistema_Inventarios_MOD\obj\Debug\net6.0\Sistema_Inventarios_MOD.dll
+E:\DESARROLLO\ANGULAR\CS_Sistema_Inventarios - copia\Sistema_Inventarios\Sistema_Inventarios_API\Sistema_Inventarios_MOD\obj\Debug\net6.0\refint\Sistema_Inventarios_MOD.dll
+E:\DESARROLLO\ANGULAR\CS_Sistema_Inventarios - copia\Sistema_Inventarios\Sistema_Inventarios_API\Sistema_Inventarios_MOD\obj\Debug\net6.0\Sistema_Inventarios_MOD.pdb
+E:\DESARROLLO\ANGULAR\CS_Sistema_Inventarios - copia\Sistema_Inventarios\Sistema_Inventarios_API\Sistema_Inventarios_MOD\obj\Debug\net6.0\Sistema_Inventarios_MOD.genruntimeconfig.cache
+E:\DESARROLLO\ANGULAR\CS_Sistema_Inventarios - copia\Sistema_Inventarios\Sistema_Inventarios_API\Sistema_Inventarios_MOD\obj\Debug\net6.0\ref\Sistema_Inventarios_MOD.dll

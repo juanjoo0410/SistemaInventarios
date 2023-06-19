@@ -1,0 +1,15 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Sistema_Inventarios_BLL\Sistema_Inventarios_BLL.csproj" />
+    <ProjectReference Include="..\Sistema_Inventarios_DAL\Sistema_Inventarios_DAL.csproj" />
+    <ProjectReference Include="..\Sistema_Inventarios_UTL\Sistema_Inventarios_UTL.csproj" />
+  </ItemGroup>
+
+</Project>
