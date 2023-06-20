@@ -3610,24 +3610,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\JuanJoo\\.nuget\\packages\\": {},
-    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
+    "C:\\Users\\JuanJoo\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "E:\\DESARROLLO\\ANGULAR\\CS_Sistema_Inventarios - copia\\Sistema_Inventarios\\Sistema_Inventarios_API\\Sistema_Inventarios_API\\Sistema_Inventarios_API.csproj",
+      "projectUniqueName": "E:\\DEVELOPER\\ANGULAR\\CS_SistemaInventarios\\SistemaInventarios\\Sistema_Inventarios_API\\Sistema_Inventarios_API\\Sistema_Inventarios_API.csproj",
       "projectName": "Sistema_Inventarios_API",
-      "projectPath": "E:\\DESARROLLO\\ANGULAR\\CS_Sistema_Inventarios - copia\\Sistema_Inventarios\\Sistema_Inventarios_API\\Sistema_Inventarios_API\\Sistema_Inventarios_API.csproj",
+      "projectPath": "E:\\DEVELOPER\\ANGULAR\\CS_SistemaInventarios\\SistemaInventarios\\Sistema_Inventarios_API\\Sistema_Inventarios_API\\Sistema_Inventarios_API.csproj",
       "packagesPath": "C:\\Users\\JuanJoo\\.nuget\\packages\\",
-      "outputPath": "E:\\DESARROLLO\\ANGULAR\\CS_Sistema_Inventarios - copia\\Sistema_Inventarios\\Sistema_Inventarios_API\\Sistema_Inventarios_API\\obj\\",
+      "outputPath": "E:\\DEVELOPER\\ANGULAR\\CS_SistemaInventarios\\SistemaInventarios\\Sistema_Inventarios_API\\Sistema_Inventarios_API\\obj\\",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-      ],
       "configFilePaths": [
         "C:\\Users\\JuanJoo\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -3635,22 +3630,20 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-        "C:\\Program Files\\dotnet\\library-packs": {},
-        "C:\\Program Files\\dotnet\\sdk\\7.0.302\\Sdks\\Microsoft.NET.Sdk.Web\\library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "E:\\DESARROLLO\\ANGULAR\\CS_Sistema_Inventarios - copia\\Sistema_Inventarios\\Sistema_Inventarios_API\\Sistema_Inventarios_BLL\\Sistema_Inventarios_BLL.csproj": {
-              "projectPath": "E:\\DESARROLLO\\ANGULAR\\CS_Sistema_Inventarios - copia\\Sistema_Inventarios\\Sistema_Inventarios_API\\Sistema_Inventarios_BLL\\Sistema_Inventarios_BLL.csproj"
+            "E:\\DEVELOPER\\ANGULAR\\CS_SistemaInventarios\\SistemaInventarios\\Sistema_Inventarios_API\\Sistema_Inventarios_BLL\\Sistema_Inventarios_BLL.csproj": {
+              "projectPath": "E:\\DEVELOPER\\ANGULAR\\CS_SistemaInventarios\\SistemaInventarios\\Sistema_Inventarios_API\\Sistema_Inventarios_BLL\\Sistema_Inventarios_BLL.csproj"
             },
-            "E:\\DESARROLLO\\ANGULAR\\CS_Sistema_Inventarios - copia\\Sistema_Inventarios\\Sistema_Inventarios_API\\Sistema_Inventarios_DTO\\Sistema_Inventarios_DTO.csproj": {
-              "projectPath": "E:\\DESARROLLO\\ANGULAR\\CS_Sistema_Inventarios - copia\\Sistema_Inventarios\\Sistema_Inventarios_API\\Sistema_Inventarios_DTO\\Sistema_Inventarios_DTO.csproj"
+            "E:\\DEVELOPER\\ANGULAR\\CS_SistemaInventarios\\SistemaInventarios\\Sistema_Inventarios_API\\Sistema_Inventarios_DTO\\Sistema_Inventarios_DTO.csproj": {
+              "projectPath": "E:\\DEVELOPER\\ANGULAR\\CS_SistemaInventarios\\SistemaInventarios\\Sistema_Inventarios_API\\Sistema_Inventarios_DTO\\Sistema_Inventarios_DTO.csproj"
             },
-            "E:\\DESARROLLO\\ANGULAR\\CS_Sistema_Inventarios - copia\\Sistema_Inventarios\\Sistema_Inventarios_API\\Sistema_Inventarios_IOC\\Sistema_Inventarios_IOC.csproj": {
-              "projectPath": "E:\\DESARROLLO\\ANGULAR\\CS_Sistema_Inventarios - copia\\Sistema_Inventarios\\Sistema_Inventarios_API\\Sistema_Inventarios_IOC\\Sistema_Inventarios_IOC.csproj"
+            "E:\\DEVELOPER\\ANGULAR\\CS_SistemaInventarios\\SistemaInventarios\\Sistema_Inventarios_API\\Sistema_Inventarios_IOC\\Sistema_Inventarios_IOC.csproj": {
+              "projectPath": "E:\\DEVELOPER\\ANGULAR\\CS_SistemaInventarios\\SistemaInventarios\\Sistema_Inventarios_API\\Sistema_Inventarios_IOC\\Sistema_Inventarios_IOC.csproj"
             }
           }
         }
@@ -3689,7 +3682,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.302\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.401\\RuntimeIdentifierGraph.json"
       }
     }
   }

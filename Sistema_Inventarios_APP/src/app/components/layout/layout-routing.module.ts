@@ -8,6 +8,8 @@ import { VentaComponent } from './pages/venta/venta.component';
 import { HistorialVentaComponent } from './pages/historial-venta/historial-venta.component';
 import { ReporteComponent } from './pages/reporte/reporte.component';
 import { CategoriaComponent } from './pages/categoria/categoria.component';
+import { CompraComponent } from './pages/compra/compra.component';
+import { ProductosAgotadosComponent } from './pages/productos-agotados/productos-agotados.component';
 
 const routes: Routes = [
   {
@@ -18,6 +20,8 @@ const routes: Routes = [
       {path: 'categorias', component: CategoriaComponent},
       {path: 'productos', component: ProductoComponent},
       {path: 'venta', component: VentaComponent},
+      {path: 'compra', component: CompraComponent},
+      {path: 'productos_agotados', component: ProductosAgotadosComponent},
       {path: 'historial_venta', component: HistorialVentaComponent},
       {path: 'reportes', component: ReporteComponent}
     ]

@@ -89,5 +89,23 @@ namespace Sistema_Inventarios_API.Controllers
             }
             return Ok(rsp);
         }
+
+        [HttpGet]
+        [Route("ListaAgotados")]
+        public async Task<IActionResult> ListaAgotados()
+        {
+            var rsp = new Response<List<ProductoDTO>>();
+            try
+            {
+                rsp.status = true;
+                rsp.value = await productoServicio.ListaAgotados();
+            }
+            catch (Exception ex)
+            {
+                rsp.status = false;
+                rsp.msg = ex.Message;
+            }
+            return Ok(rsp);
+        }
     }
 }

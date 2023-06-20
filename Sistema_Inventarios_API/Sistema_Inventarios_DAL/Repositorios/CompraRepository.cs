@@ -1,11 +1,6 @@
 ﻿using Sistema_Inventarios_DAL.DBContext;
 using Sistema_Inventarios_DAL.Repositorios.Contrato;
 using Sistema_Inventarios_MOD;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Sistema_Inventarios_DAL.Repositorios
 {
@@ -22,12 +17,12 @@ namespace Sistema_Inventarios_DAL.Repositorios
         {
             Compra compraGenerada = new Compra();
 
-            using (var trasaction = dbcontext.Database.BeginTransaction())
+            using(var trasaction = dbcontext.Database.BeginTransaction())
             {
                 try
                 {
                     //Actualizar stock de producto
-                    foreach (DetalleCompra dc in modelo.DetalleCompras)
+                    foreach (DetalleCompra dc in modelo.DetalleCompra)
                     {
                         Producto productoEncontrado = dbcontext.Productos.Where(p => p.IdProducto == dc.IdProducto).First();
                         productoEncontrado.Stock = productoEncontrado.Stock + dc.Cantidad;
@@ -48,7 +43,7 @@ namespace Sistema_Inventarios_DAL.Repositorios
                     string numeroCompra = ceros + correlativo.UltimoNumero.ToString();
                     numeroCompra = numeroCompra.Substring(numeroCompra.Length - cantDigitos, cantDigitos);
                     modelo.NumeroDocumento = numeroCompra;
-                    await dbcontext.Compras.AddAsync(modelo);
+                    await dbcontext.Compra.AddAsync(modelo);
                     await dbcontext.SaveChangesAsync();
 
                     compraGenerada = modelo;

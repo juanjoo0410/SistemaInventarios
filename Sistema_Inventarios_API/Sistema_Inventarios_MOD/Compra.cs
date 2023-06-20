@@ -15,5 +15,5 @@ public partial class Compra
 
     public DateTime? FechaRegistro { get; set; }
 
-    public virtual ICollection<DetalleCompra> DetalleCompras { get; set; } = new List<DetalleCompra>();
+    public virtual ICollection<DetalleCompra> DetalleCompra { get; set; } = new List<DetalleCompra>();
 }

@@ -1,0 +1,20 @@
+table {
+    width: 100%;
+}
+
+.mat-form-field {
+    font-size: 14px;
+    width: 100%;
+}
+
+.contenido {
+    width: 60%;
+    margin: 40px auto;
+  }
+.rojo {
+    background-color:#ff7857;
+}
+
+.naranja {
+    background-color: #f7c081;
+}

@@ -28,4 +28,8 @@ export class ProductoService {
   eliminar(id: number):Observable<ResponseApi>{
     return this.http.delete<ResponseApi>(`${this.urlApi}Eliminar/${id}`);
   }
+
+  listaAgotados():Observable<ResponseApi>{
+    return this.http.get<ResponseApi>(`${this.urlApi}ListaAgotados`);
+  }
 }

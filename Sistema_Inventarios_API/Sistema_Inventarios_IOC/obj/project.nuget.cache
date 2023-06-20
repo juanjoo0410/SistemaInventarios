@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "njSlcNH95h/dRDmhMhTWhwi31sLeQqniciHWb/ryfvAreeHOJU/3CrU8max9D9LZGguJPYuo7DDypKFtMjY3iw==",
+  "dgSpecHash": "A/hXoWvjjhCRmDBeUKKTKf93Ld13yUBrNrbUJTk1/JEJiYvgQnv5S1X+3E7rNdvVL6JQZMG/tLnLnHJP48hcUg==",
   "success": true,
-  "projectFilePath": "E:\\DESARROLLO\\ANGULAR\\CS_Sistema_Inventarios - copia\\Sistema_Inventarios\\Sistema_Inventarios_API\\Sistema_Inventarios_IOC\\Sistema_Inventarios_IOC.csproj",
+  "projectFilePath": "E:\\DEVELOPER\\ANGULAR\\CS_SistemaInventarios\\SistemaInventarios\\Sistema_Inventarios_API\\Sistema_Inventarios_IOC\\Sistema_Inventarios_IOC.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\JuanJoo\\.nuget\\packages\\automapper\\12.0.1\\automapper.12.0.1.nupkg.sha512",
     "C:\\Users\\JuanJoo\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\12.0.1\\automapper.extensions.microsoft.dependencyinjection.12.0.1.nupkg.sha512",

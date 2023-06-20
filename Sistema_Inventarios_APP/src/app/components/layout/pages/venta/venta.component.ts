@@ -25,6 +25,7 @@ export class VentaComponent implements OnInit {
   formProductoVenta!: FormGroup;
   columnasTabla: string[] = ['Producto', 'Cantidad', 'Precio', 'Total', 'Accion'];
   datosDetalleVenta = new MatTableDataSource(this.listaProductosParaVenta);
+  nombreCliente: string = "";
 
   constructor(
     private formB: FormBuilder,
@@ -34,7 +35,7 @@ export class VentaComponent implements OnInit {
   ){
     this. formProductoVenta = this.formB.group({
       producto: ["", Validators.required],
-      cantidad: ["", Validators.required]
+      cantidad: ["", Validators.required],
     });
 
     this.productoServicio.lista().subscribe({
@@ -71,22 +72,27 @@ export class VentaComponent implements OnInit {
 
   agregarProductoParaVenta(){
     const cantidad: number = this.formProductoVenta.value.cantidad;
-    const precio: number = parseFloat(this.productoSeleccionado.precioVentaTxt);
-    const total: number = cantidad * precio;
-    this.totalPagar = this.totalPagar + total;
-    this.listaProductosParaVenta.push({
-      idProducto: this.productoSeleccionado.idProducto,
-      descripcionProducto: this.productoSeleccionado.nombre,
-      cantidad: cantidad,
-      precioTxt: String(precio.toFixed(2)),
-      totalTxt: String(total.toFixed(2))
-    });
+    if (cantidad <= this.productoSeleccionado.stock){
+      const precio: number = parseFloat(this.productoSeleccionado.precioVentaTxt);
+      const total: number = cantidad * precio;
+      this.totalPagar = this.totalPagar + total;
+      this.listaProductosParaVenta.push({
+        idProducto: this.productoSeleccionado.idProducto,
+        descripcionProducto: this.productoSeleccionado.nombre,
+        cantidad: cantidad,
+        precioTxt: String(precio.toFixed(2)),
+        totalTxt: String(total.toFixed(2))
+      });
 
-    this.datosDetalleVenta = new MatTableDataSource(this.listaProductosParaVenta);
-    this.formProductoVenta.patchValue({
-      producto: "",
-      cantidad: ""
-    })
+      this.datosDetalleVenta = new MatTableDataSource(this.listaProductosParaVenta);
+      this.formProductoVenta.patchValue({
+        producto: "",
+        cantidad: ""
+      })
+    }
+    else{
+      this.utilidadServicio.mostrarAlerta("No hay suficiente stock", "Ups!");
+    }
   }
 
   eliminarProducto(detalle: DetalleVenta){
@@ -99,6 +105,7 @@ export class VentaComponent implements OnInit {
     if(this.listaProductosParaVenta.length > 0){
       this.bloquearBotonRegistrar = true;
       const request: Venta = {
+        nombreCliente: this.nombreCliente,
         tipoPago: this.tipoPagoPorDefecto,
         totalTxt: String(this.totalPagar.toFixed(2)),
         detalleVenta: this.listaProductosParaVenta
@@ -120,6 +127,7 @@ export class VentaComponent implements OnInit {
           }
         },
         complete:() => {
+          this.nombreCliente = "";
           this.bloquearBotonRegistrar = false;
         },
         error: (e) =>{}

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "wEAiwtwu0bqLzqZo2SbJZQebhc7xC7tuRZFMZSTHIpI+2UeHfa89yCutVeM4nSt0DCA5GE0zndHaofDRHbnqXQ==",
+  "dgSpecHash": "osVdluDH9ps1NmNbpEUPttdWtccL7zsUYYhdqS5v0dVtqxWmUOrcJ3idNi/T3lT0bkc/D5jeKz6rCv4+mxqTvQ==",
   "success": true,
-  "projectFilePath": "E:\\DESARROLLO\\ANGULAR\\CS_Sistema_Inventarios - copia\\Sistema_Inventarios\\Sistema_Inventarios_API\\Sistema_Inventarios_DTO\\Sistema_Inventarios_DTO.csproj",
+  "projectFilePath": "E:\\DEVELOPER\\ANGULAR\\CS_SistemaInventarios\\SistemaInventarios\\Sistema_Inventarios_API\\Sistema_Inventarios_DTO\\Sistema_Inventarios_DTO.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

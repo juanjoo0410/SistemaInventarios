@@ -17,7 +17,7 @@ public partial class DetalleCompra
 
     public decimal? Total { get; set; }
 
-    public virtual Compra? IdCompraNavigation { get; set; }
-
     public virtual Producto? IdProductoNavigation { get; set; }
+
+    public virtual Compra? IdCompraNavigation { get; set; }
 }

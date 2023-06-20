@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Chart, registerables } from 'chart.js';
 import { DashBoardService } from 'src/app/services/dash-board.service';
+import { ProductoService } from 'src/app/services/producto.service';
 Chart.register(...registerables);
 
 @Component({
@@ -12,9 +13,11 @@ export class DashBoardComponent implements OnInit {
   totalIngresos: string = "0";
   totalVentas: string = "0";
   totalProductos: string = "0";
+  totalProductosAgotados: string = "0";
 
   constructor(
-    private dashboardServicio: DashBoardService
+    private dashboardServicio: DashBoardService,
+    private productoServicio: ProductoService
   ){ }
 
   mostrarGraficos(labelGrafico: any[], dataGrafico: any[]){
@@ -47,6 +50,7 @@ export class DashBoardComponent implements OnInit {
   }
 
   ngOnInit(): void {
+    this.obtenerProductosAgotados();
     this.dashboardServicio.resumen().subscribe({
       next: (data) =>{
         if (data.status){
@@ -64,4 +68,16 @@ export class DashBoardComponent implements OnInit {
     })
   }
 
+  obtenerProductosAgotados(){
+    this.productoServicio.listaAgotados().subscribe({
+      next: (data) => {
+        if (data.status) {
+          this.totalProductosAgotados = data.value.length;
+        } else {
+          this.totalProductosAgotados = "0";
+        }
+      },
+      error: (e) => {}
+    })
+  }
 }

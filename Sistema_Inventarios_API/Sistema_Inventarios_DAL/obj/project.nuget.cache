@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "HqJ4HFxzTnLpiT8ndPj5AQzUdbCC7OGps2rXy06QiEgUwNTgl7k42IGQ1tUrPGdXBM83Cwox37wni4Vlrg3Lyg==",
+  "dgSpecHash": "QWmVKQ6kPIenTouutKTMwCdSeRxJR5koPLFxEcayewdgiiTaj5uvi2ca5M1BjJ1sDskssNZLTgK5jOkAfPMjiw==",
   "success": true,
-  "projectFilePath": "E:\\DESARROLLO\\ANGULAR\\CS_Sistema_Inventarios - copia\\Sistema_Inventarios\\Sistema_Inventarios_API\\Sistema_Inventarios_DAL\\Sistema_Inventarios_DAL.csproj",
+  "projectFilePath": "E:\\DEVELOPER\\ANGULAR\\CS_SistemaInventarios\\SistemaInventarios\\Sistema_Inventarios_API\\Sistema_Inventarios_DAL\\Sistema_Inventarios_DAL.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\JuanJoo\\.nuget\\packages\\azure.core\\1.24.0\\azure.core.1.24.0.nupkg.sha512",
     "C:\\Users\\JuanJoo\\.nuget\\packages\\azure.identity\\1.6.0\\azure.identity.1.6.0.nupkg.sha512",

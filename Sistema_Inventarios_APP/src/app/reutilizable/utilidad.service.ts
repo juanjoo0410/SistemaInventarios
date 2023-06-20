@@ -11,8 +11,8 @@ export class UtilidadService {
 
   mostrarAlerta(mensaje: string, tipo: string){
     this.snackBar.open(mensaje, tipo, {
-      horizontalPosition: "end",
-      verticalPosition: "top",
+      horizontalPosition: "center",
+      verticalPosition: "bottom",
       duration: 3000
     });
   }

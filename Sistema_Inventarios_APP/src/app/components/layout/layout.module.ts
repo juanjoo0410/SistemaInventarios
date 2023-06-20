@@ -14,6 +14,8 @@ import { ModalProductoComponent } from './modales/modal-producto/modal-producto.
 import { ModalDetalleVentaComponent } from './modales/modal-detalle-venta/modal-detalle-venta.component';
 import { CategoriaComponent } from './pages/categoria/categoria.component';
 import { ModalCategoriaComponent } from './modales/modal-categoria/modal-categoria.component';
+import { CompraComponent } from './pages/compra/compra.component';
+import { ProductosAgotadosComponent } from './pages/productos-agotados/productos-agotados.component';
 
 
 @NgModule({
@@ -28,7 +30,9 @@ import { ModalCategoriaComponent } from './modales/modal-categoria/modal-categor
     ModalProductoComponent,
     ModalDetalleVentaComponent,
     CategoriaComponent,
-    ModalCategoriaComponent
+    ModalCategoriaComponent,
+    CompraComponent,
+    ProductosAgotadosComponent
   ],
   imports: [
     CommonModule,

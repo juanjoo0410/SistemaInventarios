@@ -1,1 +1,35 @@
-<p>modal-categoria works!</p>
+<div class="contenido">
+    <h1 mat-dialog-title>{{tituloAccion}} Categoria</h1>
+    <div mat-dialog-content>
+        <form class="example-form" [formGroup]="formCategoria">
+            <mat-form-field appearance="outline">
+                <mat-label>Nombre</mat-label>
+                <input matInput autocomplete="off" formControlName="nombre">
+                <mat-icon matSuffix>fit_screen</mat-icon>
+            </mat-form-field>
+
+            <mat-form-field appearance="outline">
+                <mat-label>Sku</mat-label>
+                <mat-select formControlName="sku">
+                    <mat-option *ngFor="let item of listaSku" [value]="item.nombre">
+                        {{item.nombre}}
+                    </mat-option>
+                </mat-select>
+            </mat-form-field>
+
+            <mat-form-field appearance="outline">
+                <mat-label>Estado</mat-label>
+                <mat-select formControlName="esActivo">
+                    <mat-option value="1">Activo</mat-option>
+                    <mat-option value="0">Desactivado</mat-option>
+                </mat-select>
+            </mat-form-field>
+        </form>
+        <div mat-dialog-actions class="center">
+            <button mat-raised-button mat-dialog-close color="warn">Volver</button>
+            <button mat-raised-button color="primary" 
+                [disabled]="formCategoria.invalid"
+                (click)="guardarEditarCategoria()">{{botonAccion}}</button>
+        </div>
+    </div>
+</div>

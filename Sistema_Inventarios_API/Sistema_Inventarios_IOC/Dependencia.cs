@@ -32,6 +32,7 @@ namespace Sistema_Inventarios_IOC
             services.AddScoped<ICategoriaService, CategoriaService>();
             services.AddScoped<IProductoService, ProductoService>();
             services.AddScoped<IVentaService, VentaService>();
+            services.AddScoped<ICompraService, CompraService>();
             services.AddScoped<IDashBoardService, DashBoardService>();
             services.AddScoped<IMenuService, MenuService>();
         }

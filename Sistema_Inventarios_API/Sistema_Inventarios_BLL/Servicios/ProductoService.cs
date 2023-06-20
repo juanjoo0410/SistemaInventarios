@@ -94,5 +94,22 @@ namespace Sistema_Inventarios_BLL.Servicios
                 throw;
             }
         }
+
+        public async Task<List<ProductoDTO>> ListaAgotados()
+        {
+            try
+            {
+                var queryProducto = await productoRepositorio.Consultar();
+                var listaProductos = queryProducto
+                    .Include(categoria => categoria.IdCategoriaNavigation)
+                    .Where(p => p.Stock <= p.StockMinimo)
+                    .ToList();
+                return mapper.Map<List<ProductoDTO>>(listaProductos.ToList());
+            }
+            catch
+            {
+                throw;
+            }
+        }
     }
 }

@@ -18,9 +18,9 @@ public partial class TiendaContext : DbContext
 
     public virtual DbSet<Categoria> Categoria { get; set; }
 
-    public virtual DbSet<Compra> Compras { get; set; }
+    public virtual DbSet<Compra> Compra { get; set; }
 
-    public virtual DbSet<DetalleCompra> DetalleCompras { get; set; }
+    public virtual DbSet<DetalleCompra> DetalleCompra { get; set; }
 
     public virtual DbSet<DetalleVenta> DetalleVenta { get; set; }
 
@@ -107,13 +107,13 @@ public partial class TiendaContext : DbContext
                 .HasColumnType("decimal(10, 2)")
                 .HasColumnName("total");
 
-            entity.HasOne(d => d.IdCompraNavigation).WithMany(p => p.DetalleCompras)
-                .HasForeignKey(d => d.IdCompra)
-                .HasConstraintName("FK__DetalleCo__idCom__5DCAEF64");
-
-            entity.HasOne(d => d.IdProductoNavigation).WithMany(p => p.DetalleCompras)
+            entity.HasOne(d => d.IdProductoNavigation).WithMany(p => p.DetalleCompra)
                 .HasForeignKey(d => d.IdProducto)
                 .HasConstraintName("FK__DetalleCo__idPro__5EBF139D");
+
+            entity.HasOne(d => d.IdCompraNavigation).WithMany(p => p.DetalleCompra)
+                .HasForeignKey(d => d.IdCompra)
+                .HasConstraintName("FK__DetalleCo__idCom__5DCAEF64");
         });
 
         modelBuilder.Entity<DetalleVenta>(entity =>

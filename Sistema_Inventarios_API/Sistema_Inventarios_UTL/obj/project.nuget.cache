@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "RVv8Z05O7LsViS4arwFkpudA4uPF+dSXcsUQCKY6k6dFx/zNIYd3xYiKzzRAfbuQVchIHldLMJP+SuIchnIS+w==",
+  "dgSpecHash": "bmkeFN0Hk9Jba2ConjmNeD8rkTY5WeNtQz6xjrg6Wp8BJ1s15wxJjnPGmSRE4A25Hr2WYNfS2rWyvSQ9JxQfrQ==",
   "success": true,
-  "projectFilePath": "E:\\DESARROLLO\\ANGULAR\\CS_Sistema_Inventarios - copia\\Sistema_Inventarios\\Sistema_Inventarios_API\\Sistema_Inventarios_UTL\\Sistema_Inventarios_UTL.csproj",
+  "projectFilePath": "E:\\DEVELOPER\\ANGULAR\\CS_SistemaInventarios\\SistemaInventarios\\Sistema_Inventarios_API\\Sistema_Inventarios_UTL\\Sistema_Inventarios_UTL.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\JuanJoo\\.nuget\\packages\\automapper\\12.0.1\\automapper.12.0.1.nupkg.sha512",
     "C:\\Users\\JuanJoo\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\12.0.1\\automapper.extensions.microsoft.dependencyinjection.12.0.1.nupkg.sha512",

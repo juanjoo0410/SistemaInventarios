@@ -1,0 +1,27 @@
+mat-form-field {
+    width: 80%;
+    margin-top: 5px;
+}
+
+.contenido {
+    text-align: center;
+}
+
+button {
+    width: 120px;
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+}
+
+.example-form {
+    min-width: 150px;
+    max-width: 400px;
+    width: 100%;
+}
+
+.example-container mat-form-field + mat-form-field {
+    margin-left: 2%;
+  }

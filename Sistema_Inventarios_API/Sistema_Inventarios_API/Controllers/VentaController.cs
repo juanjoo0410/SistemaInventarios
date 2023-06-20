@@ -1,6 +1,4 @@
-﻿using Microsoft.AspNetCore.Http;
-using Microsoft.AspNetCore.Mvc;
-using Sistema_Inventarios_BLL.Servicios;
+﻿using Microsoft.AspNetCore.Mvc;
 using Sistema_Inventarios_BLL.Servicios.Contrato;
 using Sistema_Inventarios_DTO;
 
