@@ -12,6 +12,7 @@ Chart.register(...registerables);
 export class DashBoardComponent implements OnInit {
   totalIngresos: string = "0";
   totalVentas: string = "0";
+  totalCompras: string = "0";
   totalProductos: string = "0";
   totalProductosAgotados: string = "0";
 
@@ -56,6 +57,7 @@ export class DashBoardComponent implements OnInit {
         if (data.status){
           this.totalIngresos = data.value.totalIngresos;
           this.totalVentas = data.value.totalVentas;
+          this.totalCompras = data.value.totalCompras;
           this.totalProductos = data.value.totalProductos;
           const arrayData: any[] = data.value.ventasUltimSemana;
           console.log(arrayData);

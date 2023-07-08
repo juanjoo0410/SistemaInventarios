@@ -10,12 +10,15 @@ namespace Sistema_Inventarios_BLL.Servicios
     public class DashBoardService : IDashBoardService
     {
         private readonly IVentaRepository ventaRepositorio;
+        private readonly ICompraRepository compraRepositorio;
         private readonly IGenericRepository<Producto> productoRepositorio;
         private readonly IMapper mapper;
 
-        public DashBoardService(IVentaRepository ventaRepositorio, IGenericRepository<Producto> productoRepositorio, IMapper mapper)
+        public DashBoardService(IVentaRepository ventaRepositorio, ICompraRepository compraRepositorio, 
+            IGenericRepository<Producto> productoRepositorio, IMapper mapper)
         {
             this.ventaRepositorio = ventaRepositorio;
+            this.compraRepositorio = compraRepositorio;
             this.productoRepositorio = productoRepositorio;
             this.mapper = mapper;
         }
@@ -27,6 +30,13 @@ namespace Sistema_Inventarios_BLL.Servicios
             return tablaVenta.Where(v => v.FechaRegistro.Value.Date >= ultimaFecha.Value.Date);
         }
 
+        private IQueryable<Compra> retornarCompras(IQueryable<Compra> tablaCompra, int restarCantDias)
+        {
+            DateTime? ultimaFecha = tablaCompra.OrderByDescending(v => v.FechaRegistro).Select(v => v.FechaRegistro).First();
+            ultimaFecha = ultimaFecha.Value.AddDays(restarCantDias);
+            return tablaCompra.Where(v => v.FechaRegistro.Value.Date >= ultimaFecha.Value.Date);
+        }
+
         private async Task<int> totalVentasUltimaSemana()
         {
             int total = 0;
@@ -35,6 +45,18 @@ namespace Sistema_Inventarios_BLL.Servicios
             {
                 var tablaVenta = retornarVentas(ventaQuery, -7);
                 total = tablaVenta.Count();
+            }
+            return total;
+        }
+
+        private async Task<int> totalComprasUltimaSemana()
+        {
+            int total = 0;
+            IQueryable<Compra> compraQuery = await compraRepositorio.Consultar();
+            if (compraQuery.Count() > 0)
+            {
+                var tablaCompra = retornarCompras(compraQuery, -7);
+                total = tablaCompra.Count();
             }
             return total;
         }
@@ -79,6 +101,7 @@ namespace Sistema_Inventarios_BLL.Servicios
             try
             {
                 vmDashBoard.TotalVentas = await totalVentasUltimaSemana();
+                vmDashBoard.TotalCompras = await totalComprasUltimaSemana();
                 vmDashBoard.TotalIngresos = await totalIngresosUltimaSemana();
                 vmDashBoard.TotalProductos = await totalProductos();
 
