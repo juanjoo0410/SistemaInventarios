@@ -16,4 +16,6 @@
     <ProjectReference Include="..\Sistema_Inventarios_IOC\Sistema_Inventarios_IOC.csproj" />
   </ItemGroup>
 
+  <ProjectExtensions><VisualStudio><UserProperties appsettings_1json__JsonSchema="" /></VisualStudio></ProjectExtensions>
+
 </Project>

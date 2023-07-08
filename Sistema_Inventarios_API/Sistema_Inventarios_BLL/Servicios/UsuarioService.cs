@@ -29,6 +29,10 @@ namespace Sistema_Inventarios_BLL.Servicios
             {
                 var queryUsuario = await usuarioRepositorio.Consultar();
                 var listaUsuarios = queryUsuario.Include(rol => rol.IdRolNavigation).ToList();
+                foreach (var item in listaUsuarios)
+                {
+                    item.Clave = desEncriptar(item.Clave!);
+                }
                 return mapper.Map<List<UsuarioDTO>>(listaUsuarios.ToList());
             }
             catch
@@ -41,6 +45,7 @@ namespace Sistema_Inventarios_BLL.Servicios
         {
             try
             {
+                clave = encriptar(clave);
                 var queryUsuario = await usuarioRepositorio.Consultar(u =>
                 u.Correo == correo &&
                 u.Clave == clave);
@@ -59,6 +64,7 @@ namespace Sistema_Inventarios_BLL.Servicios
         {
             try
             {
+                modelo.Clave = encriptar(modelo.Clave!);
                 var usuarioCreado = await usuarioRepositorio.Crear(mapper.Map<Usuario>(modelo));
                 if (usuarioCreado.IdUsuario == 0)
                     throw new TaskCanceledException("No se pudo crear el Usuario");
@@ -76,6 +82,7 @@ namespace Sistema_Inventarios_BLL.Servicios
         {
             try
             {
+                modelo.Clave = encriptar(modelo.Clave!);
                 var usuarioModelo = mapper.Map<Usuario>(modelo);
                 var usuarioEncontrado = await usuarioRepositorio.Obtener(u => u.IdUsuario == usuarioModelo.IdUsuario);
                 if (usuarioEncontrado == null)
@@ -115,5 +122,21 @@ namespace Sistema_Inventarios_BLL.Servicios
                 throw;
             }
         }
+
+        #region Seguridad de contraseñas
+        public string encriptar(string txt)
+        {
+            byte[] encryted = System.Text.Encoding.Unicode.GetBytes(txt);
+            string result = Convert.ToBase64String(encryted);
+            return result;
+        }
+
+        public static string desEncriptar(string txt)
+        {
+            byte[] decryted = Convert.FromBase64String(txt);
+            string result = System.Text.Encoding.Unicode.GetString(decryted);
+            return result;
+        }
+        #endregion
     }
 }

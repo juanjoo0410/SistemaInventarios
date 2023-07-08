@@ -33,6 +33,8 @@ export class LayoutComponent implements OnInit {
         },
         error: (e) =>{}
       })
+    } else {
+      this.router.navigate(['login']);
     }
   }
 
