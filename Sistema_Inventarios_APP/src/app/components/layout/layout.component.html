@@ -13,13 +13,19 @@
 
 <mat-sidenav-container style="background-color: lightblue;">
     <mat-sidenav #sidenav opened="true" mode="side" style="width: 200px;">
+        <!--Menu de opciones-->
         <mat-nav-list>
             <mat-list-item *ngFor="let menu of listaMenus" [routerLink]="menu.url" routerLink="/pages/reportes">
                 <mat-icon mat-list-icon>{{menu.icono}}</mat-icon>
                 <span> {{menu.nombre}}</span>
             </mat-list-item>
+            <mat-list-item routerLink="/pages/calidad">
+                <mat-icon mat-list-icon>check</mat-icon>
+                <span>Quality</span>
+            </mat-list-item>
         </mat-nav-list>
     </mat-sidenav>
+
     <mat-sidenav-content>
         <div style="height: 89vh;">
             <router-outlet></router-outlet>

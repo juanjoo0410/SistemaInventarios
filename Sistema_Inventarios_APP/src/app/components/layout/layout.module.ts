@@ -16,6 +16,7 @@ import { CategoriaComponent } from './pages/categoria/categoria.component';
 import { ModalCategoriaComponent } from './modales/modal-categoria/modal-categoria.component';
 import { CompraComponent } from './pages/compra/compra.component';
 import { ProductosAgotadosComponent } from './pages/productos-agotados/productos-agotados.component';
+import { CalidadComponent } from './pages/calidad/calidad.component';
 
 
 @NgModule({
@@ -32,7 +33,8 @@ import { ProductosAgotadosComponent } from './pages/productos-agotados/productos
     CategoriaComponent,
     ModalCategoriaComponent,
     CompraComponent,
-    ProductosAgotadosComponent
+    ProductosAgotadosComponent,
+    CalidadComponent
   ],
   imports: [
     CommonModule,

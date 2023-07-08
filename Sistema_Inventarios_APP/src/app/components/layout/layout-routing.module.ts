@@ -10,6 +10,7 @@ import { ReporteComponent } from './pages/reporte/reporte.component';
 import { CategoriaComponent } from './pages/categoria/categoria.component';
 import { CompraComponent } from './pages/compra/compra.component';
 import { ProductosAgotadosComponent } from './pages/productos-agotados/productos-agotados.component';
+import { CalidadComponent } from './pages/calidad/calidad.component';
 
 const routes: Routes = [
   {
@@ -23,7 +24,8 @@ const routes: Routes = [
       {path: 'compra', component: CompraComponent},
       {path: 'productos_agotados', component: ProductosAgotadosComponent},
       {path: 'historial_venta', component: HistorialVentaComponent},
-      {path: 'reportes', component: ReporteComponent}
+      {path: 'reportes', component: ReporteComponent},
+      {path: 'calidad', component: CalidadComponent}
     ]
   }
 ];

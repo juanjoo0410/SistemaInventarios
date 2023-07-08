@@ -1,0 +1,14 @@
+.card-info{
+    width: 95%;
+}
+
+.mat-icon{
+    font-size: 40px !important;
+    height: 50px !important;
+    width: 50px !important;
+}
+
+.contenido {
+    width: 60%;
+    margin: 40px auto;
+  }
