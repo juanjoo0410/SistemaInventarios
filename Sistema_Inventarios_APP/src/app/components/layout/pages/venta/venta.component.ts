@@ -102,7 +102,7 @@ export class VentaComponent implements OnInit {
   }
 
   registrarVenta(){
-    if(this.listaProductosParaVenta.length > 0){
+    if(this.listaProductosParaVenta.length > 0 && this.nombreCliente != ""){
       this.bloquearBotonRegistrar = true;
       const request: Venta = {
         nombreCliente: this.nombreCliente,
@@ -132,6 +132,8 @@ export class VentaComponent implements OnInit {
         },
         error: (e) =>{}
       });
+    } else{
+      this.utilidadServicio.mostrarAlerta("Tiene que agregar el nombre del Cliente", "Ups!");
     }
   }
 }
