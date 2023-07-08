@@ -10,6 +10,7 @@ import { Venta } from 'src/app/interfaces/venta';
 })
 export class ModalDetalleVentaComponent implements OnInit {
   fechaRegistro: string = "";
+  nombreCliente: string = "";
   numeroDocumento: string = "";
   tipoPago: string = "";
   total: string = "";
@@ -20,6 +21,7 @@ export class ModalDetalleVentaComponent implements OnInit {
     @Inject(MAT_DIALOG_DATA) public venta: Venta,
   ){
     this.fechaRegistro = venta.fechaRegistro!;
+    this.nombreCliente = venta.nombreCliente!;
     this.numeroDocumento = venta.numeroDocumento!;
     this.tipoPago = venta.tipoPago;
     this.total = venta.totalTxt;
